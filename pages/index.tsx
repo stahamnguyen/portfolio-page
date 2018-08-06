@@ -1,4 +1,4 @@
-import css from "../styles/index.scss";
+import css from "../styles/global/index.scss";
 import Navbar from "../components/navbar/navbar";
 
 const Index = () => (
