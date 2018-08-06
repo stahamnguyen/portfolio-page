@@ -1,5 +1,7 @@
 @import 'normalize.css';
+@import './variables.scss';
 
 * {
     font-family: 'Raleway', sans-serif;
+    color: $mainGray;
 }

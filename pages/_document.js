@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>

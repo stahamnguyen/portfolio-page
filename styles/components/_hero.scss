@@ -1,0 +1,39 @@
+@import "../global/variables.scss";
+
+.hero {
+    background: url('../../assets/images/hero-bg-large.png');
+    background-position-x: -7px;
+    background-size: cover;
+    width: 100%;
+    padding-top: 224px;
+    text-align: center;
+
+    &__avatar {
+        display: block;
+        margin: 0 auto 40px auto;
+        border-radius: 50%;
+        width: 104px;
+        height: 104px;
+    }
+
+    &__text_blue {
+        color: $mainBlue;
+    }
+
+    h1 {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    &__downChevron {
+        width: 72px;
+        height: 48px;
+        margin: 112px auto 64px auto;
+    }
+}
