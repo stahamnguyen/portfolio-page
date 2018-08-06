@@ -1,8 +1,9 @@
-import css from '../styles/index.scss';
+import css from "../styles/index.scss";
+import Navbar from "../components/navbar";
 
 const Index = () => (
-  <div>
-    <h1 className={`${css.hero} ${css.title}`}>Hello</h1>
+  <div className={`${css.hero}`}>
+    <Navbar />
   </div>
 );
 
