@@ -1,7 +1,7 @@
 import React from "react";
 
 import AbilityCard from "./ability-card/ability-card";
-// import Intro from './intro/intro';
+import Project from "./project/project";
 
 import styles from "../../styles/components/_work.scss";
 
@@ -27,6 +27,25 @@ export default class Work extends React.PureComponent {
     }
   ];
 
+  projects = [
+    {
+      imgPath: "dostat",
+      url: "https://github.com/stahamnguyen/DostAt"
+    },
+    {
+      imgPath: "pretium",
+      url: "https://github.com/stahamnguyen/pretium"
+    },
+    {
+      imgPath: "parby-ecommerce",
+      url: "https://github.com/AnhVu23/Parby-Ecommerce"
+    },
+    {
+      imgPath: "parby-social-network",
+      url: "https://github.com/AnhVu23/ParbySocialNetwork"
+    }
+  ];
+
   render() {
     const abilityCards = this.abilities.map(ability => (
       <AbilityCard
@@ -36,11 +55,17 @@ export default class Work extends React.PureComponent {
       />
     ));
 
+    const projects = this.projects.map(project => (
+      <Project imgPath={project.imgPath} url={project.url} />
+    ));
+
     return (
       <section className={`${styles.work}`}>
         <h1>What I do</h1>
-        <div className={styles.work__abilityCardsContainer}>{abilityCards}</div>
-        <div className={styles.work__projectsContainer}></div>
+        <section className={styles.work__abilityCardsContainer}>
+          {abilityCards}
+        </section>
+        <section className={styles.work__projectsContainer}>{projects}</section>
       </section>
     );
   }
