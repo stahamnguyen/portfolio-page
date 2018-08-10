@@ -1,0 +1,19 @@
+.abilityCard {
+
+    &:not(:last-child) {
+        margin-right: 64px;
+    }
+
+    &__img {
+        height: 76px;
+        width: 80px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__content {
+        line-height: 1.7;
+    }
+}

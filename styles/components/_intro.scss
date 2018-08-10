@@ -1,0 +1,18 @@
+@import "../global/variables.scss";
+
+.intro {
+  background-color: $mainRust;
+  padding-top: 250px;
+  padding-bottom: 392px;
+
+  &__container {
+    margin: 0 176px;
+
+    h1 {
+      text-align: left;
+      letter-spacing: 1px;
+      font-weight: 700;
+      line-height: 4rem;
+    }
+  }
+}

@@ -1,9 +1,15 @@
-import Hero from './hero/hero';
+import React from "react";
 
-const about = () => (
-    <div>
+import Hero from "./hero/hero";
+import Intro from './intro/intro';
+
+export default class About extends React.PureComponent {
+  render() {
+    return (
+      <section>
         <Hero />
-    </div>
-);
-
-export default about;
+        <Intro />
+      </section>
+    );
+  }
+}

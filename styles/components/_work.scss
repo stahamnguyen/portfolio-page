@@ -1,0 +1,20 @@
+@import "../global/variables.scss";
+
+.work {
+  background-color: $mainBlue;
+  padding-top: 136px;
+  padding-bottom: 120px;
+
+  h1 {
+    text-align: center;
+  }
+
+  &__abilityCardsContainer {
+    display: flex;
+    margin: 112px 64px 0 64px;
+  }
+
+  &__projectsContainer {
+    margin: 288px 160px 0 160px;
+  }
+}
