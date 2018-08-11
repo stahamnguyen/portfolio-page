@@ -1,25 +1,25 @@
 .project {
-    flex: 1 0 50%;
+  flex: 1 0 50%;
 
-    &__card {
-        position: relative;
+  &__card {
+    position: relative;
 
-        &__frontImg {
-            width: 100%;
-            text-align: center;
-        }
-
-        &__backImg {
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: 0.5s;
-        }
-
-        &:hover &__backImg {
-            opacity: 1;
-        }
+    &__frontImg {
+      width: 100%;
+      text-align: center;
     }
+
+    &__backImg {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &:hover &__backImg {
+      opacity: 1;
+    }
+  }
 }
