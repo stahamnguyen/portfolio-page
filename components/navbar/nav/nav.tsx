@@ -13,7 +13,7 @@ const links = () => (
     <Link href="#gallery">
       <a>gallery</a>
     </Link>
-    <Link href="contact">
+    <Link href="#contact">
       <a>contact</a>
     </Link>
   </div>

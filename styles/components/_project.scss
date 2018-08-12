@@ -1,5 +1,19 @@
+@import "../global/variables.scss";
+
 .project {
-  flex: 1 0 50%;
+  flex: 1 0 100%;
+
+  @include screen-(900px) {
+    flex: 1 0 40%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 64px;
+
+    @include screen-(900px) {
+      margin-bottom: 0;
+    }
+  }
 
   &__card {
     position: relative;

@@ -1,33 +1,78 @@
 @import "../global/variables.scss";
 
 .hero {
-    background: url('../../assets/images/hero-bg-large.png');
+  background-color: $mainGray;
+
+  @include screen-(690px) {
+    background: url("../../assets/images/hero/hero-bg-small.png");
+    background-position-x: -14px;
+    background-size: cover;
+  }
+
+  @include screen-(970px) {
+    background: url("../../assets/images/hero/hero-bg-medium.png");
+    background-position-x: -14px;
+    background-size: cover;
+    padding: 152px 0 192px 0;
+  }
+
+  @include screen-(1200px) {
+    background: url("../../assets/images/hero/hero-bg-large.png");
     background-position-x: -7px;
     background-size: cover;
-    width: 100%;
-    padding-top: 224px;
-    text-align: center;
+  }
 
-    &__avatar {
-        display: block;
-        margin: 0 auto 40px auto;
-        border-radius: 50%;
-        width: 104px;
-        height: 104px;
-    }
+  padding: 224px 40px 128px 40px;
+  text-align: center;
 
-    &__text_blue {
-        color: $mainBlue;
-    }
+  &__avatar {
+    display: block;
+    margin: 0 auto 40px auto;
+    border-radius: 50%;
+    width: 104px;
+    height: 104px;
+  }
 
-    h1 {
-        text-transform: capitalize;
-        line-height: 3.5rem;
-    }
+  &__text_blue {
+    color: $mainBlue;
+  }
 
-    &__downChevron {
-        width: 72px;
-        height: 48px;
-        margin: 112px auto 64px auto;
+  h1 {
+    text-transform: capitalize;
+    line-height: 3.5rem;
+  }
+
+  h2 {
+      font-size: 1.1rem;
+
+      @include screen-(470px) {
+        font-size: 1.5rem;
     }
+  }
+
+  &__downChevron {
+    position: relative;
+    width: 72px;
+    height: 48px;
+    margin: 112px auto 0 auto;
+    animation: up-and-down 3s ease-in-out 3s infinite;
+  }
+}
+
+@keyframes up-and-down {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(30px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
 }

@@ -2,17 +2,30 @@
 
 .intro {
   background-color: $mainRust;
-  padding-top: 250px;
-  padding-bottom: 392px;
+  padding-top: 160px;
+  padding-bottom: 176px;
+
+  @include screen-(600px) {
+    padding-top: 208px;
+    padding-bottom: 216px;
+  }
+
+  @include screen-(900px) {
+    padding-top: 248px;
+    padding-bottom: 392px;
+  }
 
   &__container {
-    margin: 0 176px;
+    margin: 0 40px;
 
     h1 {
       text-align: left;
       letter-spacing: 1px;
-      font-weight: 700;
       line-height: 4rem;
+    }
+
+    @include screen-(900px) {
+      margin: 0 176px;
     }
   }
 }

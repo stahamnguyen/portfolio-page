@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Nav from "./nav/nav";
 
@@ -9,10 +10,14 @@ export default class Navbar extends React.Component {
     return (
       <section className={`${styles.navbar}`}>
         <div className={`${styles.navbar__logoContainer}`}>
-          <img
-            src={require("../../assets/images/logo.svg")}
-            className={`${styles.navbar__logoContainer__logo}`}
-          />
+          <Link href="">
+            <a>
+              <img
+                src={require("../../assets/icons/logo.svg")}
+                className={`${styles.navbar__logoContainer__logo}`}
+              />
+            </a>
+          </Link>
         </div>
         <Nav />
       </section>

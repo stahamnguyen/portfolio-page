@@ -11,7 +11,12 @@
 
   &__abilityCardsContainer {
     display: flex;
+    flex-wrap: wrap;
     margin: 112px 64px 0 64px;
+
+    @include screen-(900px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__projectsContainer {

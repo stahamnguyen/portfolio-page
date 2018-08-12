@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/navbar";
 import About from '../components/about/about';
 import Work from '../components/work/work';
 import Gallery from '../components/gallery/gallery';
+import Contact from '../components/contact/contact';
 
 const Index = () => (
   <div className={`${styles}`}>
@@ -11,6 +12,7 @@ const Index = () => (
     <About />
     <Work />
     <Gallery />
+    <Contact />
   </div>
 );
 

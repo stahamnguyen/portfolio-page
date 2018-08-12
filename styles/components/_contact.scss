@@ -1,0 +1,57 @@
+@import "../global/variables.scss";
+
+.contact {
+  &__quote {
+    padding-top: 216px;
+    padding-bottom: 216px;
+    background: url("../../assets/images/contact/bg-small.png");
+    background-position-x: -160px;
+    background-size: cover;
+
+    @include screen-(600px) {
+      background-position-x: -100px;
+    }
+
+    @include screen-(750px) {
+      background-position-x: -70px;
+      padding-top: 336px;
+    }
+
+    @include screen-(1100px) {
+      background: url("../../assets/images/contact/bg.png");
+    }
+
+    h1 {
+      text-align: center;
+      line-height: 5rem;
+    }
+  }
+
+  &__footer {
+    height: 80px;
+    background-color: $mainBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-(600px) {
+      height: 120px;
+    }
+
+    &__container {
+      width: 400px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    img {
+      height: 32px;
+      width: 32px;
+
+      @include screen-(600px) {
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+}

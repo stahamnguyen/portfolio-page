@@ -12,12 +12,20 @@
   &__imgContainer {
       display: flex;
       flex-wrap: wrap;
-      margin: 120px 64px 0 64px;
+      margin: 120px 16px 0 16px;
+
+      @include screen-(900px) {
+        margin: 120px 64px 0 64px;
+      }
 
       &__card {
         flex: 1 0 40%;
-        height: 360px;
+        height: 184px;
         padding: 16px;
+
+        @include screen-(900px) {
+          height: 360px;
+        }
 
         img {
             height: 100%;

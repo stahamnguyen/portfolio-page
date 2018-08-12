@@ -1,3 +1,9 @@
 $mainBlue: #323c4b;
 $mainGray: #bebec3;
 $mainRust: #b93219;
+
+@mixin screen-($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

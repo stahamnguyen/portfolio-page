@@ -1,6 +1,6 @@
 import React from "react";
 
-import avatar from "../../../assets/images/avatar.jpeg";
+import avatar from "../../../assets/images/hero/avatar.jpeg";
 
 import styles from "../../../styles/components/_hero.scss";
 
@@ -18,7 +18,7 @@ export default class Hero extends React.PureComponent {
           Also, a professional photographer.
         </h2>
         <img
-          src={require("../../../assets/images/double-chevron.svg")}
+          src={require("../../../assets/icons/double-chevron.svg")}
           className={`${styles.hero__downChevron}`}
         />
       </section>

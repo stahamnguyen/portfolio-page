@@ -8,8 +8,9 @@
   background-color: $mainBlue;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 50px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  overflow: hidden;
 
   &__logoContainer {
     height: 100%;
@@ -17,31 +18,53 @@
     flex: 4;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 40px;
+    
+    @include screen-(700px) {
+      margin-left: 60px;
+    }
 
     &__logo {
       width: 32px;
       height: 47px;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0px 50px 5px rgba(0, 0, 0, 0.1);
+      }
     }
   }
 
   &__nav {
     display: flex;
-    flex: 3;
     justify-content: space-around;
     margin-right: 60px;
 
-    a {
-      color: $mainGray;
-      font-weight: 200;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.2s;
+    @include screen-(700px) {
+      flex: 6;
+    }
 
-      &:hover {
+    @include screen-(1200px) {
+      flex: 3;
+    }
+
+    a {
+      @include screen-(700px) {
+        display: inline;
+        color: $mainGray;
+        font-weight: 200;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
           transition: all 0.2s;
           color: $mainRust;
+        }
       }
+
+      display: none;
     }
   }
 }
