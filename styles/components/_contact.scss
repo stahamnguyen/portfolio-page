@@ -2,13 +2,15 @@
 
 .contact {
   &__quote {
-    padding-top: 216px;
-    padding-bottom: 216px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: url("../../assets/images/contact/bg-small.png");
-    background-position-x: -160px;
+    background-position-x: -104px;
     background-size: cover;
 
     @include screen-(600px) {
+      padding-top: 216px;
+      padding-bottom: 216px;
       background-position-x: -100px;
     }
 

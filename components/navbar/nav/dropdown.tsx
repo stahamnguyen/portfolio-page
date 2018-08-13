@@ -6,7 +6,7 @@ import styles from "../../../styles/components/_dropdown.scss";
 import navStyles from "../../../styles/components/_navbar.scss";
 
 if (typeof document !== "undefined") {
-  document.addEventListener("click", event => {
+  document.addEventListener("touchstart", event => {
     if (event.target.classList.value !== navStyles.navbar__nav__hamburger) {
       hideDropdown();
     }

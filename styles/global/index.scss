@@ -7,7 +7,21 @@
 }
 
 h1 {
-  @include screen-(470px) {
+  font-size: 1.6rem;
+
+  @include screen-(360px) {
+    font-size: 1.8rem;
+  }
+
+  @include screen-(375px) {
+    font-size: 1.9rem;
+  }
+
+  @include screen-(414px) {
+    font-size: 2.2rem;
+  }
+
+  @include screen-(500px) {
     font-size: 2.5rem;
   }
 }

@@ -10,9 +10,14 @@
   }
 
   &__img {
-    height: 76px;
-    width: 80px;
+    height: 57px;
+    width: 60px;
     display: block;
+
+    @include screen-(411px) {
+      height: 76px;
+      width: 80px;
+    }
   }
 
   &__title {

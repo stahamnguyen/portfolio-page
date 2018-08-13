@@ -2,8 +2,8 @@
 
 .intro {
   background-color: $mainRust;
-  padding-top: 160px;
-  padding-bottom: 176px;
+  padding-top: 104px;
+  padding-bottom: 104px;
 
   @include screen-(600px) {
     padding-top: 208px;

@@ -2,37 +2,46 @@
 
 .gallery {
   background-color: $mainRust;
-  padding-top: 136px;
-  padding-bottom: 120px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  @include screen-(768px) {
+    padding-top: 136px;
+    padding-bottom: 120px;
+  }
 
   h1 {
     text-align: center;
   }
 
   &__imgContainer {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 120px 16px 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 56px 16px 0 16px;
+
+    @include screen-(768px) {
+      padding-top: 120px;
+    }
+
+    @include screen-(900px) {
+      margin: 120px 64px 0 64px;
+    }
+
+    &__card {
+      flex: 1 0 40%;
+      height: 184px;
+      padding: 16px;
 
       @include screen-(900px) {
-        margin: 120px 64px 0 64px;
+        height: 360px;
       }
 
-      &__card {
-        flex: 1 0 40%;
-        height: 184px;
-        padding: 16px;
-
-        @include screen-(900px) {
-          height: 360px;
-        }
-
-        img {
-            height: 100%;
-            display: block;
-            margin: auto;
-            box-shadow: 0 0 50px 5px rgba(0,0,0,0.2);
-        }
+      img {
+        height: 100%;
+        display: block;
+        margin: auto;
+        box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.2);
       }
+    }
   }
 }
