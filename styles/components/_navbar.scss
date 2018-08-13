@@ -10,7 +10,7 @@
   align-items: center;
   box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  overflow: hidden;
+  // overflow: hidden;
   transition: all 0.2s;
 
   &__logoContainer {
@@ -39,11 +39,13 @@
 
   &__nav {
     display: flex;
-    justify-content: space-around;
-    margin-right: 60px;
+    margin-right: 40px;
+    position: relative;
 
     @include screen-(700px) {
+      display: block;
       flex: 6;
+      margin-right: 40px;
     }
 
     @include screen-(1200px) {
@@ -54,20 +56,52 @@
       color: $mainRust;
     }
 
-    a {
+    &__linkContainer {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        @include screen-(700px) {
+          display: inline;
+        }
+
+        display: none;
+        font-weight: 200;
+        transition: all 0.2s;
+
+        &:hover {
+          transition: all 0.2s;
+          color: $mainRust;
+        }
+      }
+    }
+
+    &__hamburger {
+      position: relative;
+      height: 4px;
+      width: 30px;
+      background-color: $mainGray;
+
       @include screen-(700px) {
-        display: inline;
+        display: none;
       }
 
-      display: none;
-      font-weight: 200;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.2s;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        background-color: $mainGray;
+        top: -10px;
+      }
 
-      &:hover {
-        transition: all 0.2s;
-        color: $mainRust;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        background-color: $mainGray;
+        top: 10px;
       }
     }
   }

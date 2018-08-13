@@ -11,12 +11,10 @@ export default class Navbar extends React.Component {
       <header className={`${styles.navbar}`}>
         <div className={`${styles.navbar__logoContainer}`}>
           <AnchorLink href="#home">
-            <a>
-              <img
-                src={require("../../assets/icons/logo.svg")}
-                className={`${styles.navbar__logoContainer__logo}`}
-              />
-            </a>
+            <img
+              src={require("../../assets/icons/logo.svg")}
+              className={`${styles.navbar__logoContainer__logo}`}
+            />
           </AnchorLink>
         </div>
         <Nav />

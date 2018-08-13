@@ -1,0 +1,30 @@
+@import "../global/variables.scss";
+
+.dropdown {
+  position: absolute;
+  background-color: $mainBlue;
+  border: 1px solid $mainGray;
+  left: -170px;
+  width: 200px;
+  height: 200px;
+  z-index: 10000;
+
+  @include screen-(700px) {
+    
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $mainGray;
+    }
+  }
+
+  &_invisible {
+    display: none;
+  }
+}

@@ -3,12 +3,15 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Waypoint from "react-waypoint";
 
+import { hideDropdown } from "../../../helpers/helpers";
+
 import avatar from "../../../assets/images/hero/avatar.jpeg";
 
 import styles from "../../../styles/components/_hero.scss";
 
 export default class Hero extends React.PureComponent {
-  dismissNavBar: () => any = () => {
+  dismissNavBarAndDropdown: () => any = () => {
+    hideDropdown();
     document.querySelector("header").style.top = "-92px";
   };
 
@@ -18,7 +21,7 @@ export default class Hero extends React.PureComponent {
 
   render() {
     return (
-      <Waypoint onEnter={this.dismissNavBar} onLeave={this.callNavBar}>
+      <Waypoint onEnter={this.dismissNavBarAndDropdown} onLeave={this.callNavBar}>
         <section className={`${styles.hero}`} id="home">
           <img src={avatar} alt="avatar" className={`${styles.hero__avatar}`} />
           <h1 className={`${styles.hero__text_blue}`}>i'm staham nguyen</h1>
