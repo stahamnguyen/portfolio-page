@@ -8,7 +8,7 @@ import styles from "../../styles/components/_navbar.scss";
 export default class Navbar extends React.Component {
   render() {
     return (
-      <section className={`${styles.navbar}`}>
+      <header className={`${styles.navbar}`}>
         <div className={`${styles.navbar__logoContainer}`}>
           <AnchorLink href="#home">
             <a>
@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
           </AnchorLink>
         </div>
         <Nav />
-      </section>
+      </header>
     );
   }
 }

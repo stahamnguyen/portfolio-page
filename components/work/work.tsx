@@ -1,7 +1,11 @@
 import React from "react";
 
+import Waypoint from "react-waypoint";
+
 import AbilityCard from "./ability-card/ability-card";
 import Project from "./project/project";
+
+import { highlightCurrentAnchor } from "../../helpers/helpers";
 
 import styles from "../../styles/components/_work.scss";
 
@@ -60,12 +64,29 @@ export default class Work extends React.PureComponent {
     ));
 
     return (
-      <section className={`${styles.work}`}>
-        <h1>What I do</h1>
-        <section className={styles.work__abilityCardsContainer}>
-          {abilityCards}
-        </section>
-        <section className={styles.work__projectsContainer} id="work">{projects}</section>
+      <section className={`${styles.work}`} id="about">
+        <Waypoint
+          onEnter={() => highlightCurrentAnchor("about")}
+          onLeave={() => highlightCurrentAnchor("about")}
+          topOffset="50%"
+        >
+          <div>
+            <h1>What I do</h1>
+            <section className={styles.work__abilityCardsContainer}>
+              {abilityCards}
+            </section>
+          </div>
+        </Waypoint>
+        <Waypoint
+          onEnter={() => highlightCurrentAnchor("work")}
+          onLeave={() => highlightCurrentAnchor("work")}
+          topOffset="25%"
+          bottomOffset="15%"
+        >
+          <section className={styles.work__projectsContainer} id="work">
+            {projects}
+          </section>
+        </Waypoint>
       </section>
     );
   }

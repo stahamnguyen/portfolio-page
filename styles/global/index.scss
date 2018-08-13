@@ -20,3 +20,27 @@ a,
 h4 {
   font-weight: 200;
 }
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $mainBlue; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $mainGray; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $mainRust; 
+}

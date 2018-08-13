@@ -11,6 +11,7 @@
   box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   overflow: hidden;
+  transition: all 0.2s;
 
   &__logoContainer {
     height: 100%;
@@ -19,7 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-left: 40px;
-    
+
     @include screen-(700px) {
       margin-left: 60px;
     }
@@ -49,22 +50,25 @@
       flex: 3;
     }
 
+    &_active {
+      color: $mainRust;
+    }
+
     a {
       @include screen-(700px) {
         display: inline;
-        color: $mainGray;
-        font-weight: 200;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.2s;
-
-        &:hover {
-          transition: all 0.2s;
-          color: $mainRust;
-        }
       }
 
       display: none;
+      font-weight: 200;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s;
+
+      &:hover {
+        transition: all 0.2s;
+        color: $mainRust;
+      }
     }
   }
 }
