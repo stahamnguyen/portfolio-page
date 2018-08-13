@@ -2,7 +2,7 @@
 
 .hero {
   background-color: $mainGray;
-  padding: 96px 40px 128px 40px;
+  padding: 80px 40px 128px 40px;
   text-align: center;
 
   @include screen-(411px) {
@@ -57,7 +57,7 @@
     position: relative;
     width: 72px;
     height: 48px;
-    margin: 48px auto 0 auto;
+    margin: 32px auto 0 auto;
     animation: up-and-down 3s ease-in-out 3s infinite;
 
     @include screen-(360px) {
