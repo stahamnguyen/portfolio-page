@@ -3,7 +3,7 @@ $mainGray: #bebec3;
 $mainRust: #b93219;
 
 @mixin screen-($width) {
-  @media (min-width: $width) {
+  @media only screen and (min-width: $width) {
     @content;
   }
 }

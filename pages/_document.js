@@ -29,7 +29,9 @@ export default class MyDocument extends Document {
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b93219" />
           <meta name="msapplication-TileColor" content="#da532c" />
-          <meta name="theme-color" content="#bebec3" />
+          <meta name="theme-color" content="#323c4b" />
+          <meta name="viewport" content="width=device-width,initial-scale=1"/>
+          <meta name="apple-mobile-web-app-title" content="Staham Nguyen"/>
           <link rel="stylesheet" href="/_next/static/style.css" />
           <title>Staham Nguyen, Web and Mobile Developer</title>
         </Head>
