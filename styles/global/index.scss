@@ -26,6 +26,10 @@ a {
   text-transform: uppercase;
 }
 
+body {
+  background-color: $mainBlue;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
