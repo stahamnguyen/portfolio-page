@@ -6,7 +6,7 @@ import styles from "../../../styles/components/_contact.scss";
 export default class Footer extends React.Component {
   render() {
     return (
-      <section className={styles.contact__footer}>
+      <section className={styles.contact__footer} id="contact">
         <div className={styles.contact__footer__container}>
           <Link href="mailto:nguyensnj@gmail.com?Subject=Hello Staham">
             <a>

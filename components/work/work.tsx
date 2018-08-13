@@ -65,7 +65,7 @@ export default class Work extends React.PureComponent {
         <section className={styles.work__abilityCardsContainer}>
           {abilityCards}
         </section>
-        <section className={styles.work__projectsContainer}>{projects}</section>
+        <section className={styles.work__projectsContainer} id="work">{projects}</section>
       </section>
     );
   }

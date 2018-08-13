@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import avatar from "../../../assets/images/hero/avatar.jpeg";
 
@@ -7,7 +8,7 @@ import styles from "../../../styles/components/_hero.scss";
 export default class Hero extends React.PureComponent {
   render() {
     return (
-      <section className={`${styles.hero}`}>
+      <section className={`${styles.hero}`} id="home">
         <img src={avatar} alt="avatar" className={`${styles.hero__avatar}`} />
         <h1 className={`${styles.hero__text_blue}`}>i'm staham nguyen</h1>
         <h2 className={`${styles.hero__text_blue}`}>
@@ -17,10 +18,12 @@ export default class Hero extends React.PureComponent {
         <h2 className={`${styles.hero__text_blue}`}>
           Also, a professional photographer.
         </h2>
-        <img
-          src={require("../../../assets/icons/double-chevron.svg")}
-          className={`${styles.hero__downChevron}`}
-        />
+        <AnchorLink href="#work" offset='100'>
+          <img
+            src={require("../../../assets/icons/double-chevron.svg")}
+            className={`${styles.hero__downChevron}`}
+          />
+        </AnchorLink>
       </section>
     );
   }

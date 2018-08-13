@@ -5,7 +5,7 @@ import styles from "../../../styles/components/_intro.scss";
 export default class Intro extends React.PureComponent {
   render() {
     return (
-      <section className={`${styles.intro}`}>
+      <section className={`${styles.intro}`} id="about">
         <div className={`${styles.intro__container}`}>
           <h1>
             I'm a developer focusing on web and mobile. I create products that

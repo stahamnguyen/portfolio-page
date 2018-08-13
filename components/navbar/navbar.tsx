@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Nav from "./nav/nav";
 
@@ -10,14 +10,14 @@ export default class Navbar extends React.Component {
     return (
       <section className={`${styles.navbar}`}>
         <div className={`${styles.navbar__logoContainer}`}>
-          <Link href="">
+          <AnchorLink href="#home">
             <a>
               <img
                 src={require("../../assets/icons/logo.svg")}
                 className={`${styles.navbar__logoContainer__logo}`}
               />
             </a>
-          </Link>
+          </AnchorLink>
         </div>
         <Nav />
       </section>

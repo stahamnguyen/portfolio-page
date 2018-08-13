@@ -18,7 +18,7 @@ export default class Gallery extends React.Component {
 
   render() {
     return (
-      <section className={styles.gallery}>
+      <section className={styles.gallery} id="gallery">
         <h1>Gallery</h1>
         <div className={styles.gallery__imgContainer}>{this.images}</div>
       </section>
