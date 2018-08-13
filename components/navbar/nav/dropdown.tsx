@@ -7,7 +7,7 @@ import navStyles from "../../../styles/components/_navbar.scss";
 
 if (typeof document !== "undefined") {
   document.addEventListener("touchstart", event => {
-    if (event.target.classList.value !== navStyles.navbar__nav__hamburger) {
+    if (event.target.parentNode.classList.value !== navStyles.navbar__nav__hamburger) {
       hideDropdown();
     }
   });
